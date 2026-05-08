@@ -91,11 +91,6 @@ public class Garage {
         System.out.println("Espacio Disponible: " + espacioDisponible);
     }
 
-    // Método para calcular el costo de la estadía
-    private double calcularCostoEstadia(Vehiculo vehiculo) {  
-        return vehiculo.calcularCosto(); // Delega el cálculo al vehículo  
-    }
-
     // Getters y setters (Para Harcodear))  
     public int getCapacidadMaxima() {  
         return capacidadMaxima;  
