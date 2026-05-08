@@ -31,5 +31,8 @@ public class Garage {
     }
 
      public void registrarIngreso(Vehiculo vehiculo)
-            throws GarageLlenoException, PatenteDuplicadaException, VehiculoNoEncontradoException {
+            throws GarageLlenoException, PatenteDuplicadaException, 
+            VehiculoNoEncontradoException,
+            HorasInvalidasException {         
+}
 }
