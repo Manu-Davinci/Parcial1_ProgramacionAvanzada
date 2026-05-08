@@ -36,8 +36,9 @@ public class Garage {
 
     //Metodo que calcula el costo de la estadia
     private double calcularCostoEstadia(Vehiculo vehiculo) {
-        return vehiculo.getHoras() * 10000.0; // seran $10000 la hora 
+        return vehiculo.calcularCosto();
     }
+
 
     //Metodo Registrar Ingreso
      public void registrarIngreso(Vehiculo vehiculo) throws GarageLlenoException, PatenteDuplicadaException, HorasInvalidasException {  
