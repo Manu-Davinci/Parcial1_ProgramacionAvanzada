@@ -16,7 +16,11 @@ public class Garage {
     }
 
     //Metodos
-     
+    public void registrarIngreso(Vehiculo vehiculo) throws GarageLlenoException, PatenteDuplicadaException {  
+        if(vehiculosEstacionados.size() >= capacidadMaxima) {
+            throw new GarageLlenoException("El garage está lleno!");
+        }
+        
 }
 
 
