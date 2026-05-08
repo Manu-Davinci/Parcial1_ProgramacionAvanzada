@@ -1,6 +1,6 @@
 package scr.Estacionamiento;
 
-public class Vehiculo {
+public abstract class Vehiculo {
 
     
 	protected String patente;
@@ -24,4 +24,10 @@ public class Vehiculo {
     public int getHoras() {
         return horas;
     }
+
+    public abstract double calcularCosto();
+
+    public abstract void mostrarDatos();
+
+    public abstract int espacioOcupado();
 }
