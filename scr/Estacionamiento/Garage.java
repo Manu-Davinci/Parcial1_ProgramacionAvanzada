@@ -33,6 +33,16 @@ public class Garage {
      public void registrarIngreso(Vehiculo vehiculo)
             throws GarageLlenoException, PatenteDuplicadaException, 
             VehiculoNoEncontradoException,
-            HorasInvalidasException {         
+            HorasInvalidasException {  
+                if (vehiculo.getHoras() <= 0) {
+            throw new HorasInvalidasException("Las horas deben ser mayores a 0");
+        }
+       
+        if (espacioDisponible() < vehiculo.espacioOcupado()) {
+            throw new GarageLlenoException("No hay espacio suficiente para este vehículo");
+        }
+
+        vehiculos.add(vehiculo);
+        
 }
 }
