@@ -43,6 +43,8 @@ public class Garage {
         }
 
         vehiculos.add(vehiculo);
-        
+
+        System.out.println("Vehiculo ingresado correctamente");
+    }
 }
-}
+
