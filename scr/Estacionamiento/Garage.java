@@ -82,13 +82,19 @@ public class Garage {
     
     // Metodo para mostrar estado del garage  
     public void mostrarEstadoDelGarage() {  
+        int cantidadVehiculos = getCantidadVehiculosEstacionados();  
         int espacioOcupado = calcularEspacioOcupado();  
         int espacioDisponible = capacidadMaxima - espacioOcupado;  
 
         System.out.println("Estado del Garage:");  
+        System.out.println("Cantidad de vehículos: " + cantidadVehiculos);  
         System.out.println("Capacidad Total: " + capacidadMaxima);  
         System.out.println("Espacio Ocupado: " + espacioOcupado);  
         System.out.println("Espacio Disponible: " + espacioDisponible);
+    }
+
+    public int getCantidadVehiculosEstacionados() {
+        return vehiculosEstacionados.size();
     }
 
     // Getters y setters (Para Harcodear))  
