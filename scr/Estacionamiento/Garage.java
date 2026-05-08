@@ -15,12 +15,17 @@ public class Garage {
         this.vehiculosEstacionados = new ArrayList<>();
     }
 
-    //Metodos
+    //Metodo Registrar Ingreso
     public void registrarIngreso(Vehiculo vehiculo) throws GarageLlenoException, PatenteDuplicadaException {  
         if(vehiculosEstacionados.size() >= capacidadMaxima) {
             throw new GarageLlenoException("El garage está lleno!");
         }
-        
-}
+
+        if (buscarVehiculoPorPatente(vehiculo.getPatente()) != null) {  
+            throw new PatenteDuplicadaException("La patente ya está registrada.");
+        }  
+        vehiculosEstacionados.add(vehiculo);
+    }
+    
 
 
