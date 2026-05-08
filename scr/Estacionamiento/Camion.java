@@ -2,6 +2,7 @@ package scr.Estacionamiento;
 
 public class Camion extends Vehiculo {
 
+    //Constructor
     public Camion(String patente, String marca, String modelo, int horas) {
         super(patente, marca, modelo, horas);
     }
