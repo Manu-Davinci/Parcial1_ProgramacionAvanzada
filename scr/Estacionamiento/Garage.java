@@ -25,5 +25,11 @@ public class Garage {
 
         return total;
     }
-    
+
+    public int espacioDisponible() {
+        return capacidadMaxima - espacioOcupadoTotal();
+    }
+
+     public void registrarIngreso(Vehiculo vehiculo)
+            throws GarageLlenoException,
 }
