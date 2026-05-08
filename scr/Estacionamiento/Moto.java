@@ -21,4 +21,11 @@ public class Moto extends Vehiculo {
         System.out.println("Horas: " + horas);
         System.out.println("Costo Total: $" + calcularCosto());
     }
+
+    //Eclipse me recomendó implementar esto para que deje de dar error con la clase pero no se implementa ni se usa.
+    @Override
+    public int espacioOcupado() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'espacioOcupado'");
+    }
 }
