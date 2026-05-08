@@ -46,5 +46,11 @@ public class Garage {
 
         System.out.println("Vehiculo ingresado correctamente");
     }
+
+    public void registrarSalida(String patente)
+            throws VehiculoNoEncontradoException {
+
+        Vehiculo encontrado = null;
+        
 }
 
