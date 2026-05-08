@@ -36,7 +36,7 @@ public class Garage {
 
     //Metodo que calcula el costo de la estadia
     private double calcularCostoEstadia(Vehiculo vehiculo) {
-        return vehiculo.getHoras() * 10000.0; // Asumo que seran $10000 la hora 
+        return vehiculo.getHoras() * 10000.0; // seran $10000 la hora 
     }
 
     //Metodo Registrar Ingreso
@@ -63,8 +63,9 @@ public class Garage {
             throw new VehiculoNoEncontradoException("No se encontró el vehículo con la patente: " + patente);  
         }  
         vehiculosEstacionados.remove(vehiculo);  
-        return calcularCostoEstadia(vehiculo); // Calcular el costo antes de removerlo  
+        return calcularCostoEstadia(vehiculo);
     }
+
 
     
 }
