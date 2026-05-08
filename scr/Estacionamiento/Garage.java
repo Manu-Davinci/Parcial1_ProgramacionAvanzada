@@ -68,7 +68,7 @@ public class Garage {
         return calcularCostoEstadia(vehiculo);
     }
 
-    // Metodo para listar Vehiculos Estacionados  
+    // Metodo para listar Vehiculos Estacionados por tipo
     public void listarVehiculosEstacionados() {  
         if (vehiculosEstacionados.isEmpty()) {  
             System.out.println("No hay vehículos estacionados en el garage.");  
@@ -91,8 +91,5 @@ public class Garage {
         System.out.println("Espacio Disponible: " + espacioDisponible);
     }
 
-    
 }
-    
-
 
