@@ -58,6 +58,7 @@ public class Garage {
 
     //Metodo Registrar Salida  
     public double registrarSalida(String patente) throws VehiculoNoEncontradoException {  
+        // Se busca vehiculo por patente 
         Vehiculo vehiculo = buscarVehiculoPorPatente(patente);  
         if (vehiculo == null) {  
             throw new VehiculoNoEncontradoException("No se encontró el vehículo con la patente: " + patente);  
@@ -66,6 +67,28 @@ public class Garage {
         return calcularCostoEstadia(vehiculo);
     }
 
+    // Metodo para listar Vehiculos Estacionados  
+    public void listarVehiculosEstacionados() {  
+        if (vehiculosEstacionados.isEmpty()) {  
+            System.out.println("No hay vehículos estacionados en el garage.");  
+            return;  
+        }  
+        System.out.println("Vehículos estacionados:");  
+        for (Vehiculo vehiculo : vehiculosEstacionados) {  
+            vehiculo.mostrarDatos();  
+        }  
+    }    
+    
+    // Metodo para mostrar estado del garage  
+    public void mostrarEstadoDelGarage() {  
+        int espacioOcupado = calcularEspacioOcupado();  
+        int espacioDisponible = capacidadMaxima - espacioOcupado;  
+
+        System.out.println("Estado del Garage:");  
+        System.out.println("Capacidad Total: " + capacidadMaxima);  
+        System.out.println("Espacio Ocupado: " + espacioOcupado);  
+        System.out.println("Espacio Disponible: " + espacioDisponible);
+    }
 
     
 }
