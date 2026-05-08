@@ -26,6 +26,15 @@ public class Garage {
         }  
         vehiculosEstacionados.add(vehiculo);
     }
+
+    private Vehiculo buscarVehiculoPorPatente(String patente) {  
+        for (Vehiculo vehiculo : vehiculosEstacionados) {  
+            if (vehiculo.getPatente().equals(patente)) {  
+                return vehiculo;
+            }  
+        }  
+        return null
+    }
     
 
 
