@@ -2,7 +2,7 @@ package scr.Estacionamiento;
 
 public abstract class Vehiculo {
 
-    
+    //Atributos 
 	protected String patente;
     protected String marca;
     protected String modelo;
@@ -25,6 +25,7 @@ public abstract class Vehiculo {
         return horas;
     }
 
+    
     public abstract double calcularCosto();
 
     public abstract void mostrarDatos();
