@@ -26,7 +26,7 @@ public class Garage {
     }
 
     //Metodo que calcula el espacio ocupado 
-    private int calcularEspacioOcupado() {
+    public int calcularEspacioOcupado() {
         int total = 0;
         for (Vehiculo v : vehiculosEstacionados) {
             total += v.espacioOcupado();
@@ -91,5 +91,17 @@ public class Garage {
         System.out.println("Espacio Disponible: " + espacioDisponible);
     }
 
-}
+    // Método para calcular el costo de la estadía
+    private double calcularCostoEstadia(Vehiculo vehiculo) {  
+        return vehiculo.calcularCosto(); // Delega el cálculo al vehículo  
+    }
 
+    // Getters y setters (Para Harcodear))  
+    public int getCapacidadMaxima() {  
+        return capacidadMaxima;  
+    }  
+
+    public void setCapacidadMaxima(int capacidadMaxima) {  
+        this.capacidadMaxima = capacidadMaxima;  
+    }
+}
