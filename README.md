@@ -249,7 +249,7 @@ Incluye:
 ## Clonar repositorio
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/Manu-Davinci/Parcial1_ProgramacionAvanzada
 ```
 
 ## Abrir proyecto
@@ -277,14 +277,14 @@ El proyecto fue desarrollado utilizando Git realizando commits progresivos y des
 Repositorio utilizado:
 
 ```text
-PEGAR_LINK_DEL_REPOSITORIO
+https://github.com/Manu-Davinci/Parcial1_ProgramacionAvanzada
 ```
 
 ---
 
 # Autor
 
-- Nombre y Apellido
+- Manuel Portilla
 - Programación Avanzada 1
 - Escuela Da Vinci
 - 2026
