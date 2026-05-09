@@ -54,8 +54,6 @@ Durante el desarrollo se aplicaron:
 - Encapsulamiento
 - Manejo de excepciones
 - Colecciones ArrayList
-- UML
-- Control de versiones con Git
 
 ---
 
@@ -88,12 +86,7 @@ ProyectoGarage/
 │   │
 │   └── Main.java
 │
-├── docs/
-│   └── uml.pdf
-│
 ├── README.md
-│
-└── decisiones.txt
 ```
 
 ---
@@ -231,16 +224,8 @@ El sistema genera reportes mostrando:
 
 # UML
 
-La documentación UML se encuentra dentro de la carpeta:
+La documentación UML se encuentra dentro del .zip en formato png
 
-```text
-/docs
-```
-
-Incluye:
-
-- Diagrama de Clases
-- Diagrama de Casos de Uso
 
 ---
 
@@ -256,6 +241,7 @@ git clone https://github.com/Manu-Davinci/Parcial1_ProgramacionAvanzada
 
 Abrir en:
 
+- Visual Studio Code
 - IntelliJ IDEA
 - NetBeans
 - Eclipse
@@ -272,7 +258,7 @@ Main.java
 
 # Git y Control de Versiones
 
-El proyecto fue desarrollado utilizando Git realizando commits progresivos y descriptivos.
+El proyecto fue desarrollado utilizando Git realizando commits progresivos.
 
 Repositorio utilizado:
 
@@ -285,6 +271,6 @@ https://github.com/Manu-Davinci/Parcial1_ProgramacionAvanzada
 # Autor
 
 - Manuel Portilla
-- Programación Avanzada 1
+- Programación Avanzada
 - Escuela Da Vinci
 - 2026
